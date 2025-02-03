@@ -1,7 +1,7 @@
 package com.example.cryptocurrencyappyt.domain.repository
 
-import com.example.cryptocurrencyappyt.data.remote.dto.CoinDetailDto
-import com.example.cryptocurrencyappyt.data.remote.dto.CoinDto
+import com.example.cryptocurrencyappyt.data.mapper.dto.CoinDto
+import com.example.cryptocurrencyappyt.data.mapper.dto.CoinDetailDto
 
 interface CoinRepository {
 

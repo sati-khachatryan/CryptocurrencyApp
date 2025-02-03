@@ -10,7 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.unit.dp
-import com.example.cryptocurrencyappyt.data.remote.dto.TeamMember
+import com.example.cryptocurrencyappyt.data.mapper.dto.TeamMember
 
 @Composable
 fun TeamListItem(

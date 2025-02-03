@@ -1,6 +1,6 @@
 package com.example.cryptocurrencyappyt.domain.model
 
-import com.example.cryptocurrencyappyt.data.remote.dto.TeamMember
+import com.example.cryptocurrencyappyt.data.mapper.dto.TeamMember
 
 data class CoinDetail(
     val coinId: String,

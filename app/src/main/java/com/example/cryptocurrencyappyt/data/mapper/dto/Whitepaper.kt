@@ -1,4 +1,4 @@
-package com.example.cryptocurrencyappyt.data.remote.dto
+package com.example.cryptocurrencyappyt.data.mapper.dto
 
 data class Whitepaper(
     val link: String,

@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.systemBarsPadding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.CircularProgressIndicator
@@ -33,7 +34,9 @@ fun CoinDetailScreen(
     viewModel: CoinDetailViewModel = hiltViewModel()
 ) {
     val state = viewModel.state.value
-    Box(modifier = Modifier.fillMaxSize()) {
+    Box(modifier = Modifier
+        .fillMaxSize()
+        .systemBarsPadding()) {
         state.coin?.let { coin ->
             LazyColumn(
                 modifier = Modifier.fillMaxSize(),
@@ -50,8 +53,8 @@ fun CoinDetailScreen(
                             modifier = Modifier.weight(8f)
                         )
                         Text(
-                            text = if(coin.isActive) "active" else "inactive",
-                            color = if(coin.isActive) Color.Green else Color.Red,
+                            text = if (coin.isActive) "active" else "inactive",
+                            color = if (coin.isActive) Color.Green else Color.Red,
                             fontStyle = FontStyle.Italic,
                             textAlign = TextAlign.End,
                             modifier = Modifier
@@ -97,7 +100,7 @@ fun CoinDetailScreen(
                 }
             }
         }
-        if(state.error.isNotBlank()) {
+        if (state.error.isNotBlank()) {
             Text(
                 text = state.error,
                 color = MaterialTheme.colorScheme.error,
@@ -108,7 +111,7 @@ fun CoinDetailScreen(
                     .align(Alignment.Center)
             )
         }
-        if(state.isLoading) {
+        if (state.isLoading) {
             CircularProgressIndicator(modifier = Modifier.align(Alignment.Center))
         }
     }

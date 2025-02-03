@@ -1,7 +1,7 @@
 package com.example.cryptocurrencyappyt.domain.use_case.get_coins
 
 import com.example.cryptocurrencyappyt.common.Resource
-import com.example.cryptocurrencyappyt.data.remote.dto.toCoin
+import com.example.cryptocurrencyappyt.data.mapper.dto.toCoin
 import com.example.cryptocurrencyappyt.domain.model.Coin
 import com.example.cryptocurrencyappyt.domain.repository.CoinRepository
 import kotlinx.coroutines.flow.Flow

@@ -86,4 +86,12 @@ dependencies {
     implementation (libs.converter.gson)
     implementation (libs.okhttp)
     implementation (libs.logging.interceptor)
+
+
+    //Room
+    implementation(libs.androidx.room.runtime)
+    ksp(libs.androidx.room.compiler)
+    implementation(libs.androidx.room.ktx)
+    testImplementation(libs.androidx.room.testing)
+    implementation(libs.androidx.room.paging)
 }

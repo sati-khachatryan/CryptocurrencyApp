@@ -1,4 +1,4 @@
-package com.example.cryptocurrencyappyt.data.remote.dto
+package com.example.cryptocurrencyappyt.data.mapper.dto
 
 import com.google.gson.annotations.SerializedName
 
